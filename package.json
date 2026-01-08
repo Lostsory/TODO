@@ -29,8 +29,10 @@
       "dist/**/*",
       "main.js",
       "preload.js",
-      "package.json"
+      "package.json",
+      "assets/**/*"
     ],
+    "asar": false,
     "mac": {
       "target": [
         {
