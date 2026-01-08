@@ -31,11 +31,11 @@
 
 ### 方式1：使用DMG安装包（推荐）
 
-从 [Releases](../../releases) 页面下载适合你Mac的安装包：
+从 [GitHub Releases](https://github.com/Lostsory/TODO/releases) 页面下载适合你Mac的安装包：
 
-- **Mac Desktop Todo-1.0.0-arm64.dmg** (93 MB) - 适用于 Apple Silicon Mac (M1/M2/M3)
-- **Mac Desktop Todo-1.0.0-universal.dmg** (169 MB) - 适用于所有 Mac (Intel + Apple Silicon)
-- **Mac Desktop Todo-1.0.0.dmg** (98 MB) - 适用于 Intel Mac
+- **[Mac Desktop Todo-1.0.0-arm64.dmg](https://github.com/Lostsory/TODO/releases/download/v1.0.0/Mac-Desktop-Todo-1.0.0-arm64.dmg)** (93 MB) - 适用于 Apple Silicon Mac (M1/M2/M3)
+- **[Mac Desktop Todo-1.0.0-universal.dmg](https://github.com/Lostsory/TODO/releases/download/v1.0.0/Mac-Desktop-Todo-1.0.0-universal.dmg)** (169 MB) - 适用于所有 Mac (Intel + Apple Silicon)
+- **[Mac Desktop Todo-1.0.0.dmg](https://github.com/Lostsory/TODO/releases/download/v1.0.0/Mac-Desktop-Todo-1.0.0.dmg)** (98 MB) - 适用于 Intel Mac
 
 **安装步骤：**
 1. 下载 `.dmg` 文件
