@@ -57,7 +57,9 @@ pnpm install
 pnpm dist
 
 # 安装生成的 .app 文件
-open release/mac-universal/Mac Desktop Todo.app
+open release/mac-arm64/Mac\ Desktop\ Todo.app  # Apple Silicon
+# 或
+open release/mac/Mac\ Desktop\ Todo.app  # Intel
 ```
 
 ## 🛠️ 技术栈
@@ -89,7 +91,8 @@ mac-todo/
 ├── README.md
 └── release/                 # 打包输出目录
     ├── *.dmg                # DMG安装包
-    └── mac-*/               # .app文件
+    ├── mac/                 # .app文件 (Intel)
+    └── mac-arm64/           # .app文件 (Apple Silicon)
 ```
 
 ## 🚀 开发指南
