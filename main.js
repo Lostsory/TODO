@@ -64,9 +64,14 @@ function createTray() {
   if (fs.existsSync(iconPath)) {
     // 使用自定义图标
     const originalIcon = nativeImage.createFromPath(iconPath);
-    // 调整图标尺寸为16x16（macOS菜单栏标准尺寸）
-    trayIcon = originalIcon.resize({ width: 16, height: 16 });
-    // 设置为Template模式
+    // 调整图标尺寸为适合macOS菜单栏的大小
+    // 使用 aspectRatio 保持比例，质量设为 best
+    trayIcon = originalIcon.resize({
+      width: 18,
+      height: 18,
+      quality: 'best'
+    });
+    // 设置为Template模式（自动应用圆角和颜色适配）
     trayIcon.setTemplateImage(true);
   } else {
     // 创建一个简单的16x16 Template图标
