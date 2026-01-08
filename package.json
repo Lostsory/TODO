@@ -1,0 +1,78 @@
+{
+  "name": "mac-desktop-todo",
+  "version": "1.0.0",
+  "description": "A desktop Todo list app for macOS with floating window",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "electron:dev": "NODE_ENV=development electron . --dev",
+    "electron:build": "vite build && electron .",
+    "start": "vite build && electron .",
+    "dist": "vite build && electron-builder --mac --universal"
+  },
+  "keywords": [
+    "electron",
+    "todo",
+    "macos"
+  ],
+  "author": "",
+  "license": "MIT",
+  "build": {
+    "appId": "com.mactodo.app",
+    "productName": "Mac Desktop Todo",
+    "directories": {
+      "buildResources": "assets",
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "preload.js",
+      "package.json"
+    ],
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        }
+      ],
+      "icon": "assets/icon.png",
+      "category": "public.app-category.productivity",
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "autoprefixer": "^10.4.23",
+    "electron": "^28.0.0",
+    "electron-builder": "^26.4.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
+}
