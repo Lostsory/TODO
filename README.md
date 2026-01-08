@@ -33,8 +33,7 @@
 
 从 [GitHub Releases](https://github.com/Lostsory/TODO/releases) 页面下载适合你Mac的安装包：
 
-- **[Mac Desktop Todo-1.0.0-arm64.dmg](https://github.com/Lostsory/TODO/releases/download/v1.0.0/Mac-Desktop-Todo-1.0.0-arm64.dmg)** (93 MB) - 适用于 Apple Silicon Mac (M1/M2/M3)
-- **[Mac Desktop Todo-1.0.0-universal.dmg](https://github.com/Lostsory/TODO/releases/download/v1.0.0/Mac-Desktop-Todo-1.0.0-universal.dmg)** (169 MB) - 适用于所有 Mac (Intel + Apple Silicon)
+- **[Mac Desktop Todo-1.0.0-arm64.dmg](https://github.com/Lostsory/TODO/releases/download/v1.0.0/Mac-Desktop-Todo-1.0.0-arm64.dmg)** (93 MB) - 适用于 Apple Silicon Mac (M1/M2/M3/M4 及更新)
 - **[Mac Desktop Todo-1.0.0.dmg](https://github.com/Lostsory/TODO/releases/download/v1.0.0/Mac-Desktop-Todo-1.0.0.dmg)** (98 MB) - 适用于 Intel Mac
 
 **安装步骤：**
@@ -116,14 +115,13 @@ pnpm electron . --dev
 ### 打包应用
 
 ```bash
-# 打包成 DMG 和 zip 文件
+# 打包成 DMG 文件
 pnpm dist
 ```
 
 打包完成后，安装包位于 `release/` 目录：
 - `Mac Desktop Todo-1.0.0-arm64.dmg` - Apple Silicon 版本
 - `Mac Desktop Todo-1.0.0.dmg` - Intel 版本
-- `Mac Desktop Todo-1.0.0-universal.dmg` - 通用版本
 
 ## 📖 使用说明
 

@@ -9,7 +9,7 @@
     "electron:dev": "NODE_ENV=development electron . --dev",
     "electron:build": "vite build && electron .",
     "start": "vite build && electron .",
-    "dist": "vite build && electron-builder --mac --universal"
+    "dist": "vite build && electron-builder --mac --x64 --arm64"
   },
   "keywords": [
     "electron",
